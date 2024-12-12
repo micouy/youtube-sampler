@@ -10,38 +10,49 @@
             body {
                 font-family: monospace;
             }
+
+            #root {
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+            }
+
+            #root > button {
+                margin-right: auto;
+            }
         </style>
     </head>
     <body>
-        <h1>YouTube Sampler by micouy</h1>
+        <div id="root">
+            <h1>YouTube Sampler by micouy</h1>
 
-        <p style="color: gray">
-            Paste the link to a YouTube video and load the video. Find
-            interesting samples and save them by clicking on 'Mark Current
-            Time'. Then assign keys to samples and create a beat.
-        </p>
-        st
+            <p style="color: gray">
+                Paste the link to a YouTube video and load the video. Find
+                interesting samples and save them by clicking on 'Mark Current
+                Time'. Then assign keys to samples and create a beat.
+            </p>
 
-        <!-- Input for YouTube video link -->
-        <label for="video-url">YouTube Video Link:</label>
-        <input
-            type="text"
-            id="video-url"
-            value="https://www.youtube.com/watch?v=FWp0nIqha7I"
-            placeholder="Paste YouTube link here"
-        />
-        <button id="load-video">Load Video</button>
+            <!-- Input for YouTube video link -->
+            <label for="video-url">YouTube Video Link:</label>
+            <input
+                type="text"
+                id="video-url"
+                value="https://www.youtube.com/watch?v=FWp0nIqha7I"
+                placeholder="Paste YouTube link here"
+            />
+            <button id="load-video">Load Video</button>
 
-        <!-- Video Player Container -->
-        <div
-            id="player"
-            style="margin-top: 20px; width: 640px; height: 390px"
-        ></div>
+            <!-- Video Player Container -->
+            <div
+                id="player"
+                style="margin-top: 20px; width: 640px; height: 390px"
+            ></div>
 
-        <!-- Add Timestamp Section -->
-        <button id="mark-time" style="margin-top: 20px">
-            Mark Current Time [M]
-        </button>
-        <ol id="timestamps" style="margin-top: 10px"></ol>
+            <!-- Add Timestamp Section -->
+            <button id="mark-time" style="margin-top: 20px">
+                Mark Current Time [M]
+            </button>
+            <ol id="timestamps" style="margin-top: 10px"></ol>
+        </div>
     </body>
 </html>

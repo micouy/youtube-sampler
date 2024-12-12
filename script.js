@@ -47,7 +47,7 @@ function addTimestamp() {
 
   // Add speed display and control buttons
   const speedLabel = document.createElement("span");
-  speedLabel.textContent = "1.0x ";
+  speedLabel.textContent = " 1.0x ";
 
   const speedDownButton = document.createElement("button");
   speedDownButton.textContent = "↓";
@@ -113,7 +113,7 @@ function adjustSpeed(keyInput, adjustment) {
     keyBindings[keyInput.value.toLowerCase()].speed = newSpeed;
   }
   keyInput.parentElement.querySelectorAll("span")[1].textContent =
-    newSpeed.toFixed(1) + "x ";
+    " " + newSpeed.toFixed(1) + "x ";
 }
 
 function formatTime(seconds) {
