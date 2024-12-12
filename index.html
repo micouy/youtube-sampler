@@ -6,15 +6,28 @@
         <title>YouTube Video Control</title>
         <script src="https://www.youtube.com/iframe_api"></script>
         <script src="script.js" defer></script>
+        <style>
+            body {
+                font-family: monospace;
+            }
+        </style>
     </head>
     <body>
-        <h1>YouTube Video Control</h1>
+        <h1>YouTube Sampler by micouy</h1>
+
+        <p style="color: gray">
+            Paste the link to a YouTube video and load the video. Find
+            interesting samples and save them by clicking on 'Mark Current
+            Time'. Then assign keys to samples and create a beat.
+        </p>
+        st
 
         <!-- Input for YouTube video link -->
         <label for="video-url">YouTube Video Link:</label>
         <input
             type="text"
             id="video-url"
+            value="https://www.youtube.com/watch?v=FWp0nIqha7I"
             placeholder="Paste YouTube link here"
         />
         <button id="load-video">Load Video</button>
@@ -27,7 +40,7 @@
 
         <!-- Add Timestamp Section -->
         <button id="mark-time" style="margin-top: 20px">
-            Mark Current Time
+            Mark Current Time [M]
         </button>
         <ol id="timestamps" style="margin-top: 10px"></ol>
     </body>
