@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>YouTube Video Control</title>
+        <script src="https://www.youtube.com/iframe_api"></script>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <h1>YouTube Video Control</h1>
+
+        <!-- Input for YouTube video link -->
+        <label for="video-url">YouTube Video Link:</label>
+        <input
+            type="text"
+            id="video-url"
+            placeholder="Paste YouTube link here"
+        />
+        <button id="load-video">Load Video</button>
+
+        <!-- Video Player Container -->
+        <div
+            id="player"
+            style="margin-top: 20px; width: 640px; height: 390px"
+        ></div>
+
+        <!-- Add Timestamp Section -->
+        <button id="mark-time" style="margin-top: 20px">
+            Mark Current Time
+        </button>
+        <ol id="timestamps" style="margin-top: 10px"></ol>
+    </body>
+</html>
